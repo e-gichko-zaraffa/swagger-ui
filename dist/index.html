@@ -74,6 +74,7 @@ window.onload = function() {
 
   // Build a system
   const ui = SwaggerUIBundle({
+    enableCORS: false,
     url: "http://api.4everlearning-test.local.zaraffasoft.com/swagger/v1.json",
     dom_id: '#swagger-ui',
     deepLinking: true,
