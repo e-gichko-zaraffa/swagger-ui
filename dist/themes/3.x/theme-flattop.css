@@ -50,7 +50,7 @@
 .swagger-ui .opblock-tag {
     font-size: 24px;
     font-weight: 500;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -124,7 +124,7 @@
     font-size: 12px;
     font-weight: 700;
     margin: 0;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -138,7 +138,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -151,7 +151,7 @@
     border-radius: 3px;
     background: #000;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #fff
 }
 
@@ -328,7 +328,7 @@
     min-width: 90px;
     padding: 0;
     cursor: pointer;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -485,7 +485,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     margin: -20px 15px 0 0;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -512,7 +512,7 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -571,7 +571,7 @@
     border-radius: 4px;
     background: transparent;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -586,7 +586,7 @@
 
 .swagger-ui .btn.cancel {
     border-color: #ff6060;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #ff6060
 }
 
@@ -718,7 +718,7 @@
     background: #f7f7f7 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+ICAgIDxwYXRoIGQ9Ik0xMy40MTggNy44NTljLjI3MS0uMjY4LjcwOS0uMjY4Ljk3OCAwIC4yNy4yNjguMjcyLjcwMSAwIC45NjlsLTMuOTA4IDMuODNjLS4yNy4yNjgtLjcwNy4yNjgtLjk3OSAwbC0zLjkwOC0zLjgzYy0uMjctLjI2Ny0uMjctLjcwMSAwLS45NjkuMjcxLS4yNjguNzA5LS4yNjguOTc4IDBMMTAgMTFsMy40MTgtMy4xNDF6Ii8+PC9zdmc+) right 10px center no-repeat;
     background-size: 20px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -739,7 +739,7 @@
     font-size: 12px;
     font-weight: 700;
     margin: 0 0 5px;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -932,7 +932,7 @@
     font-size: 18px;
     font-weight: 600;
     margin: 15px 0 0;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -964,7 +964,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -1067,7 +1067,7 @@
     cursor: pointer;
     -webkit-transition: all .2s;
     transition: all .2s;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #777;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1092,7 +1092,7 @@
 .swagger-ui section.models h5 {
     font-size: 16px;
     margin: 0 0 10px;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #777
 }
 
@@ -1138,7 +1138,7 @@
 
 .swagger-ui .model-title {
     font-size: 16px;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #555
 }
 
@@ -1218,7 +1218,7 @@
 .swagger-ui .parameter__name {
     font-size: 16px;
     font-weight: 400;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -1272,7 +1272,7 @@
     -ms-flex: 1;
     flex: 1;
     -ms-flex-align: center;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #fff
 }
 
@@ -1302,7 +1302,7 @@
     border: none;
     border-radius: 0 4px 4px 0;
     background: #547f00;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #fff
 }
 
@@ -1379,7 +1379,7 @@
 
 .swagger-ui .info .title small pre {
     margin: 0;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #fff
 }
 
@@ -1445,7 +1445,7 @@
 
 .swagger-ui .scopes h2 {
     font-size: 14px;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -1490,7 +1490,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -1645,7 +1645,7 @@
     border: none;
     border-radius: 0 4px 4px 0;
     background: #DADFE1;
-    font-family: Titillium Web, sans-serif;
+    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #2C3E50;
 }
 
