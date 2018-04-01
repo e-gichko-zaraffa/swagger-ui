@@ -29,6 +29,14 @@
     flex-direction: column
 }
 
+.swagger-ui section.block-desktop > div {
+    border-top: 1px dashed rgba(59, 65, 81, .15);
+}
+
+.swagger-ui .opblock-tag ~ div {
+    border-bottom: 1px dashed rgba(59, 65, 81, .15) !important;
+}
+
 .swagger-ui .opblock-tag {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -37,7 +45,7 @@
     cursor: pointer;
     -webkit-transition: all .2s;
     transition: all .2s;
-    border-bottom: 1px solid rgba(59, 65, 81, .3);
+    border-bottom: 1px dashed rgba(59, 65, 81, .15);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
@@ -48,9 +56,8 @@
 }
 
 .swagger-ui .opblock-tag {
+    font-family: 'Amatic SC', cursive;
     font-size: 24px;
-    font-weight: 500;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #3b4151
 }
 
@@ -66,14 +73,15 @@
 }
 
 .swagger-ui .opblock-tag small {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 15px;
     padding: 0 10px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     font-family: Open Sans, sans-serif;
-    color: #3b4151
+    color: rgba(0, 0, 0, .6);
+    letter-spacing: -.7px;
+    text-transform: lowercase;
 }
 
 .swagger-ui .parаmeter__type {
@@ -124,34 +132,35 @@
     font-size: 12px;
     font-weight: 700;
     margin: 0;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #3b4151
 }
 
 .swagger-ui .opblock .opblock-section-header label span {
-    padding: 0 10px 0 0
+    display: none;
+    padding: 0 10px 0 0;
 }
 
 .swagger-ui .opblock .opblock-section-header h4 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: Anonymous Pro, monospace;
     color: #3b4151
 }
 
 .swagger-ui .opblock .opblock-summary-method {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     min-width: 80px;
     padding: 6px 15px;
     text-align: center;
     border-radius: 3px;
     background: #000;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: Inconsolata, monospace;
     color: #fff
 }
 
@@ -161,7 +170,7 @@
     display: -ms-flexbox;
     display: flex;
     padding: 0 10px;
-    font-family: Source Code Pro, monospace;
+    font-family: Anonymous Pro, monospace;
     font-weight: 600;
     color: #3b4151;
     -webkit-box-align: center;
@@ -189,12 +198,13 @@
 }
 
 .swagger-ui .opblock .opblock-summary-description {
-    font-size: 13px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
     font-family: Open Sans, sans-serif;
-    color: #3b4151
+    font-size: 13px;
+    text-transform: lowercase;
+    color: rgba(0, 0, 0, .6);
 }
 
 .swagger-ui .opblock .opblock-summary {
@@ -323,12 +333,12 @@
 }
 
 .swagger-ui .tab li {
-    font-size: 12px;
+    font-size: 14px;
     min-width: 100px;
     min-width: 90px;
-    padding: 0;
+    padding: 0 12px 0 0;
     cursor: pointer;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: Inconsolata, monospace;
     color: #3b4151
 }
 
@@ -412,9 +422,14 @@
     color: #3b4151
 }
 
+.swagger-ui thead .response-col_status {
+    position: relative;
+    left: 36px;
+}
+
 .swagger-ui .response-col_status {
-    font-size: 14px;
-    font-family: Open Sans, sans-serif;
+    font-size: 15px;
+    font-family: Anonymous Pro, monospace;
     color: #3b4151
 }
 
@@ -443,19 +458,26 @@
 }
 
 .swagger-ui .opblock-body pre {
-    font-size: 12px;
+    font-size: 15px;
     margin: 0;
     padding: 10px;
     white-space: pre-wrap;
     border-radius: 4px;
     background: #41444e;
-    font-family: Source Code Pro, monospace;
-    font-weight: 600;
+    font-family: Inconsolata, monospace;
+    font-weight: 500;
     color: #fff
 }
 
 .swagger-ui .opblock-body pre span {
     color: #fff !important
+}
+
+.swagger-ui .response-col_description__inner div.markdown p, .swagger-ui .response-col_description__inner div.renderedMarkdown p {
+    font-family: Anonymous Pro, monospace;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .swagger-ui .scheme-container {
@@ -475,8 +497,8 @@
 }
 
 .swagger-ui .scheme-container .schemes > label {
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -484,14 +506,20 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin: -20px 15px 0 0;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    margin: 0;
+    font-family: Inconsolata, monospace;
     color: #3b4151
+}
+
+.swagger-ui .scheme-container .schemes > label span {
+    display: none;
 }
 
 .swagger-ui .scheme-container .schemes > label select {
     min-width: 130px;
-    text-transform: uppercase
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .swagger-ui .loading-container {
@@ -512,7 +540,7 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-transform: uppercase;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #3b4151
 }
 
@@ -562,8 +590,8 @@
 }
 
 .swagger-ui .btn {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 500;
     padding: 5px 23px;
     -webkit-transition: all .3s;
     transition: all .3s;
@@ -571,8 +599,14 @@
     border-radius: 4px;
     background: transparent;
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
-    color: #3b4151
+    font-family: Inconsolata, monospace;
+    color: #3b4151;
+    text-transform: uppercase;
+    letter-spacing: -.3px;
+}
+
+.swagger-ui .btn:active {
+    font-weight: 600;
 }
 
 .swagger-ui .btn[disabled] {
@@ -586,7 +620,7 @@
 
 .swagger-ui .btn.cancel {
     border-color: #ff6060;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #ff6060
 }
 
@@ -711,14 +745,14 @@
 
 .swagger-ui select {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 500;
     padding: 5px 40px 5px 10px;
     border: 2px solid #41444e;
     border-radius: 4px;
     background: #f7f7f7 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCI+ICAgIDxwYXRoIGQ9Ik0xMy40MTggNy44NTljLjI3MS0uMjY4LjcwOS0uMjY4Ljk3OCAwIC4yNy4yNjguMjcyLjcwMSAwIC45NjlsLTMuOTA4IDMuODNjLS4yNy4yNjgtLjcwNy4yNjgtLjk3OSAwbC0zLjkwOC0zLjgzYy0uMjctLjI2Ny0uMjctLjcwMSAwLS45NjkuMjcxLS4yNjguNzA5LS4yNjguOTc4IDBMMTAgMTFsMy40MTgtMy4xNDF6Ii8+PC9zdmc+) right 10px center no-repeat;
     background-size: 20px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: Inconsolata, monospace;
     color: #3b4151;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -739,7 +773,7 @@
     font-size: 12px;
     font-weight: 700;
     margin: 0 0 5px;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #3b4151
 }
 
@@ -932,7 +966,7 @@
     font-size: 18px;
     font-weight: 600;
     margin: 15px 0 0;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #3b4151
 }
 
@@ -964,16 +998,20 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #3b4151
 }
 
+.swagger-ui table.model {
+    margin-left: 26px;
+}
+
 .swagger-ui .model {
-    font-size: 12px;
-    font-weight: 300;
-    font-family: Source Code Pro, monospace;
-    font-weight: 600;
-    color: #3b4151
+    font-family: Inconsolata, monospace;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #3b4151;
 }
 
 .swagger-ui .model-toggle {
@@ -1058,7 +1096,7 @@
 }
 
 .swagger-ui section.models h4 {
-    font-size: 16px;
+    font-size: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1067,7 +1105,7 @@
     cursor: pointer;
     -webkit-transition: all .2s;
     transition: all .2s;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #777;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1092,7 +1130,7 @@
 .swagger-ui section.models h5 {
     font-size: 16px;
     margin: 0 0 10px;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #777
 }
 
@@ -1137,9 +1175,17 @@
 }
 
 .swagger-ui .model-title {
-    font-size: 16px;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-size: 18px;
+    font-weight: bold;
     color: #555
+}
+
+.swagger-ui .topbar-wrapper .download-url-input {
+    font-family: Anonymous Pro, monospace;
+    font-size: 15px;
+    letter-spacing: -.1px;
+    font-weight: bold;
 }
 
 .swagger-ui span > span.model, .swagger-ui span > span.model .brace-close {
@@ -1188,18 +1234,40 @@
     vertical-align: top
 }
 
+.swagger-ui table tbody tr td.col.response-col_status {
+    display: inline-block;
+    padding: .25em .4em;
+    line-height: 22px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    font-family: Anonymous Pro, monospace;
+    font-size: 18px;
+    margin: 10px -72px 0 0;
+    border-radius: .3rem;
+    border: 2px solid rgba(255, 255, 255, .67);
+    color: #fff;
+    background-color: rgba(40, 167, 69, .9);
+    cursor: crosshair;
+
+}
+
+.swagger-ui table tbody tr td.col.response-col_status:hover {
+    font-weight: 700;
+}
+
 .swagger-ui table tbody tr td:first-of-type {
     width: 20%;
     padding: 10px 0
 }
 
 .swagger-ui table thead tr td, .swagger-ui table thead tr th {
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 600;
     padding: 12px 0;
     text-align: left;
     border-bottom: 1px solid rgba(59, 65, 81, .2);
-    font-family: Open Sans, sans-serif;
+    font-family: Anonymous Pro, monospace;
     color: #3b4151
 }
 
@@ -1217,8 +1285,8 @@
 
 .swagger-ui .parameter__name {
     font-size: 16px;
-    font-weight: 400;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-weight: 500;
+    font-family: Anonymous Pro, monospace;
     color: #3b4151
 }
 
@@ -1226,21 +1294,47 @@
     font-weight: 700
 }
 
+.swagger-ui .parameter__name.required span {
+    position: relative;
+    top: -6px;
+    margin-left: -9px;
+}
+
 .swagger-ui .parameter__name.required:after {
     font-size: 10px;
     position: relative;
     top: -6px;
     padding: 5px;
-    content: "required";
+    content: "";
     color: rgba(255, 0, 0, .6)
 }
 
-.swagger-ui .parameter__in {
-    font-size: 12px;
-    font-style: italic;
+.swagger-ui .parameter__type {
+    display: inline-block;
+    padding: .25em .6em;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 10rem;
+    color: #fff;
+    background-color: #17a2b8;
     font-family: Source Code Pro, monospace;
+    font-size: 11px;
+    font-weight: 500;
+    position: relative;
+    left: -1%;
+}
+
+.swagger-ui .parameter__in {
+    position: relative;
+    left: -1%;
+    font-family: Inconsolata, monospace;
+    font-size: 15px;
+    line-height: 22px;
+    font-style: normal;
     font-weight: 600;
-    color: #888
+    color: rgba(0, 0, 0, .6);
 }
 
 .swagger-ui .table-container {
@@ -1272,7 +1366,7 @@
     -ms-flex: 1;
     flex: 1;
     -ms-flex-align: center;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #fff
 }
 
@@ -1297,17 +1391,42 @@
 
 .swagger-ui .topbar .download-url-wrapper .download-url-button {
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 4px 40px;
     border: none;
     border-radius: 0 4px 4px 0;
     background: #547f00;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
-    color: #fff
+    font-family: Inconsolata, monospace;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -.7px;
 }
 
 .swagger-ui .info {
-    margin: 50px 0
+    position: relative;
+    margin: 32px 0;
+}
+
+.swagger-ui .information-container.wrapper .description ~ div,
+.swagger-ui .information-container.wrapper .description ~ div ~ div,
+.swagger-ui .information-container.wrapper .description ~ div ~ div ~ div,
+.swagger-ui .information-container.wrapper .description ~ div ~ div ~ div ~ a {
+    display: none;
+}
+
+.swagger-ui .information-container.wrapper .description {
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
+
+.swagger-ui .information-container.wrapper .description .markdown p {
+    margin: 0;
+    font-family: Amatic SC, cursive;
+    font-size: 36px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    color: #3b4151;
 }
 
 .swagger-ui .info hgroup.main {
@@ -1350,19 +1469,25 @@
 }
 
 .swagger-ui .info .base-url {
-    font-size: 12px;
-    font-weight: 300 !important;
     margin: 0;
-    font-family: Source Code Pro, monospace;
-    font-weight: 600;
-    color: #3b4151
+    font-family: Inconsolata, monospace;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: bold !important;
+    letter-spacing: -.6px;
+    color: #3b4151;
+}
+
+.swagger-ui .info .base-url ~ a {
+    display: none;
 }
 
 .swagger-ui .info .title {
-    font-size: 36px;
+    font-size: 38px;
     margin: 0;
-    font-family: Open Sans, sans-serif;
-    color: #3b4151
+    font-family: Anonymous Pro, monospace;
+    color: #3b4151;
+    letter-spacing: -1px;
 }
 
 .swagger-ui .info .title small {
@@ -1379,8 +1504,11 @@
 
 .swagger-ui .info .title small pre {
     margin: 0;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
-    color: #fff
+    font-family: Inconsolata, monospace;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #fff;
 }
 
 .swagger-ui .auth-btn-wrapper {
@@ -1445,7 +1573,7 @@
 
 .swagger-ui .scopes h2 {
     font-size: 14px;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #3b4151
 }
 
@@ -1490,7 +1618,7 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #3b4151
 }
 
@@ -1639,13 +1767,10 @@
 }
 
 .swagger-ui .topbar .download-url-wrapper .download-url-button {
-    font-size: 16px;
-    font-weight: 700;
     padding: 4px 40px;
     border: none;
     border-radius: 0 4px 4px 0;
     background: #DADFE1;
-    font-family: Anonymous Pro, Titillium Web, sans-serif;
     color: #2C3E50;
 }
 
