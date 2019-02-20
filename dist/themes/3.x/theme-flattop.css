@@ -1796,3 +1796,7 @@
 .swagger-ui .btn.authorize svg {
     fill: #336E7B;
 }
+
+.responses-inner > .responses-table {
+    display: none;
+}
