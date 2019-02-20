@@ -425,9 +425,9 @@
 .swagger-ui thead .response-col_status {
     display: block;
     position: relative;
-    left: 36px;
-    margin-left: -32px;
-    margin-right: 42px;
+    width: 102px;
+    margin-left: 3px;
+    margin-right: -16px;
 }
 
 .swagger-ui .response-col_status {
