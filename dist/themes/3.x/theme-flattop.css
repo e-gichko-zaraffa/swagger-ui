@@ -423,8 +423,11 @@
 }
 
 .swagger-ui thead .response-col_status {
+    display: block;
     position: relative;
     left: 36px;
+    margin-left: -32px;
+    margin-right: 42px;
 }
 
 .swagger-ui .response-col_status {
