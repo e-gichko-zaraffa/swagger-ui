@@ -443,6 +443,11 @@
     color: #999
 }
 
+.swagger-ui .response-col_description > span {
+    line-height: 32px;
+    padding-left: 8px;
+}
+
 .swagger-ui .response-col_description__inner span {
     font-size: 12px;
     font-style: italic;
